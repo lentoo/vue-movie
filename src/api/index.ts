@@ -41,6 +41,6 @@ export function getSearch(start = 0) {
     count: 10
   }))
 }
-export function getSubject(id) {
+export function getSubject(id: string) {
   return request.get('/subject/' + id)
 }
