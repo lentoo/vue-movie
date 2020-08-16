@@ -10,8 +10,8 @@ Vue.use(VueRouter);
 Vue.use(focus);
 
 const routes = [
-  { path: '/:server/:page', component: list },
   { path: '/detail/:id', component: detail },
+  { path: '/:server/:page', component: list },
   { path: '*', redirect: '/in_theaters/0' }
 ];
 const router = new VueRouter({
